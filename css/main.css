@@ -8,10 +8,40 @@ h3, h4 {
 
 }
 
-.header {
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
+/* Стиль для шапки */
+header {
+	width: 100%;
+	height: 100px;
+	background-color:rgba(11, 99, 32, 0.4);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  /* Стиль для логотипа */
+.logo {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	animation: moveLogo 5s infinite alternate ease-in-out;
+  }
+  
+  /* Анимация для движения логотипа */
+  @keyframes moveLogo {
+	0% {
+	  left: 0; /* Логотип в начале в левом краю */
+	}
+	50% {
+	  left: 30%; /* Логотип на 30% ширины шапки */
+	}
+	100% {
+	  left: 0; /* Логотип возвращается к левому краю */
+	}
+  }
+  
 
 .product-img {
 	width: 90%;

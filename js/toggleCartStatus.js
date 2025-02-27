@@ -1,3 +1,16 @@
+
+const logo = document.querySelector('.logo');
+logo.addEventListener('click', function(){
+    location.reload();
+})
+
+window.addEventListener('scroll', function(){
+    const scrollPosition = this.window.scrollY
+     ogo.style.left = `${scrollPosition % (window.innerWidth - 100)}px`
+})
+
+
+
 function toggleCartStatus(){
 
     const cartWrapper = document.querySelector('.cart-wrapper');
