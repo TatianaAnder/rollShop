@@ -172,10 +172,10 @@
 					<!-- Оформить заказ-->
 					<div id="order-form" class="card-body border-top none">
 						<h5 class="card-title">Оформить заказ</h5>
-						<form>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Ваш номер телефона">
-							</div>
+						<form class="form-group">
+								<label for="phone">Ваш номер телефона</label>
+								<input type="text" class="form-control" id="phone" placeholder="+7 (___) ___-__-__" required>
+								<span id="error-message" style="color: red;"></span>
 							<button type="submit" class="btn btn-primary">Заказать</button>
 						</form>
 					</div>
